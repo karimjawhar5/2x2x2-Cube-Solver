@@ -16,7 +16,7 @@ Prolog is a logic programming language associated with artificial intelligence, 
 - Run this to use the twosy.pl script:
 ```[twosy].```
 - Run this to see it in action: (you can find more information about the procedures in 2x2x2.pl and twosy.pl)
-```state_zero(Solved), shuffle(Solved, Shuffled), twosy(Shuffled, Moves), display_path(Shuffled, Moves)````
+```state_zero(Solved), shuffle(Solved, Shuffled), twosy(Shuffled, Moves), display_path(Shuffled, Moves)```
 
 
 ##Algorith & Project Details
