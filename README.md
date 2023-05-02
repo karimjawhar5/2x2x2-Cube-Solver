@@ -26,7 +26,7 @@ First Let's consider the cube representation included in the 2x2x2.pl and 2x2x2p
 
 It's been mathematically proven that a 2x2x2 Cube in any state can be solved in 14 moves or less (each move is 90 degree rotation). We take advantage of this fact to in our program.
 
-Here's how it works:
+### Here's how it works:
 - We apply ONE of EACH possible move to a cube in the solved state, this gives us 6 new states!
 - Again we apply ONE of EACH possible move to the given shuffled sube, this also gives us 6 new states!
 - On each of those states from the solved and the mixed cubes we do the same, this will grow or spheres exponentially, but remeber we only have to grow each sphere 7 layers out, so 6^7 = 279,936 states.
