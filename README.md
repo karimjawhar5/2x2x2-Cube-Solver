@@ -1,16 +1,16 @@
 # 2x2x2-Cube-Solver
 A prolog program using meet-in-middle algorithm to solve 2x2x2 Rubik's cube representation
 
-###introduction
+## introduction
 Prolog is a logic programming language associated with artificial intelligence, the goal of this project is to use the meet in the middle alorithm to find ALL of the shortest paths (set of moves) to take a 2x2x2 Rubik's cube from any state (3,674,160 possible states!!) to the solved state! 
 
-###Dependencies
+## Dependencies
 - SWI-Prolog to run prolog scripts: https://www.swi-prolog.org/ (available on Mac OS, and Windows)
 - XQuartz to visualize cube representation: https://www.xquartz.org/ (available only for Mac OS)
 
-###Usage
+## Usage
 - Download this repository on your desktop or any directory, make sure to change directory accordingly!
-#### In SWI-Prolog:
+### In SWI-Prolog:
 -  Run this to change working directory:
 ```working_directory(CWD,'/Users/<Your Username>/Desktop/2x2x2-Cube-Solver').```
 - Run this to use the twosy.pl script:
@@ -19,7 +19,7 @@ Prolog is a logic programming language associated with artificial intelligence, 
 ```state_zero(Solved), shuffle(Solved, Shuffled), twosy(Shuffled, Moves), display_path(Shuffled, Moves)```
 
 
-###Algorith & Project Details
+## Algorith & Project Details
 The meet in the middle algorith is perfect for this use case, since the state space of the 2x2x2 Rubick's cube is huge 3,674,160 possible states to be exact. 
 
 First Let's consider the cube representation included in the 2x2x2.pl and 2x2x2pce.pl, these files create a representation for our 2x2x2 rubik's cube, it keeps track of the cube state, by holding a fixed corner, and in refference of that corner 6 possible moves can be done (bottom, right, left sides. for each side clockwise or counter clockwise 90 degree rotation).
@@ -34,9 +34,9 @@ Here's how it works:
 - after finding that common state we connect the path of the state our original mixed state to our solved state and voila we have a set of moves to solve or cube!
 - The reason meet in the middle algorithm so powerful in this case is because generating and storing 279,936x2 is much more efficient that just expanding the solved state to 6^14 = 78,364,164,096 states to fine the solved our mixed state or visa versa, which would practically be impossible to store, search or let alone generate!
 
-###Demo
+## Demo
 Youtube Video Demo:
 https://youtu.be/ARm3xM-5CZ0
 
-###Attribution
+## Attribution
 The 2x2x2 Rubik's Cube representation file (`2x2x2.pl`) used in this project was originally created by Christian Schlichtherle and modified by Parke Godfrey.
